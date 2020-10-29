@@ -19,6 +19,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Main}/>
+        <Route exact path="/app-food" component={Main}/>
         <Route exact path="/search-recipe" component={Search}/>
         <Route exact path="/tasks" component={Tasks}/>
       </Switch>
