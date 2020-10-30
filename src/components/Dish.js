@@ -6,15 +6,15 @@ const Dish = ({count,setCount}) => {
         <div className="gallery-foto">
              <i onClick={() => {
                     setCount(count - 1)
-                    if(count == 0){
+                    if(count === 0){
                         setCount(4)
                     }
                     
                     }} className="fas fa-chevron-left"></i>
-        <img className="foto" src={imgTab[count]}/>
+        <img className="foto" alt="foto" src={imgTab[count]}/>
         <i onClick={() => {
                     setCount(count + 1)
-                    if(count == 4){
+                    if(count === 4){
                         setCount(0)
                     }
                 }} className="fas fa-chevron-right"></i>

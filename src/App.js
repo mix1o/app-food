@@ -1,15 +1,15 @@
-import React,{useEffect} from "react";
+import React from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Main from "./pages/Main"
 import Search from "./pages/Search";
-import Tasks from "./pages/Tasks";
+import Reviews from "./pages/Reviews";
 import Article from "./pages/Article";
+import SingleReview from "./components/SingleReview";
 
 function App() {
   
@@ -18,9 +18,10 @@ function App() {
       <Switch>
         <Route exact path="/" component={Main}/>
         <Route exact path="/app-food" component={Main}/>
+        <Route exact path="/app-food/posts/:id" component={SingleReview}/>
         <Route exact path="/article" component={Article}/>
         <Route exact path="/search-recipe" component={Search}/>
-        <Route exact path="/tasks" component={Tasks}/>
+        <Route exact path="/review" component={Reviews}/>
       </Switch>
     </Router>
   );

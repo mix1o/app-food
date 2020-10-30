@@ -20,7 +20,7 @@ const Hamburger = () => {
         <>
         
         <StyledBurger onClick={() => setOpen(!open)}>
-        <img className="header-foto" src="https://i.pinimg.com/originals/90/6b/94/906b94d1bed351b8d0f2f95448a0d6c0.png"/>
+        <img alt="logo" className="header-foto" src="https://i.pinimg.com/originals/90/6b/94/906b94d1bed351b8d0f2f95448a0d6c0.png"/>
         {!open && <i className="fas fa-bars"></i>}
         {open && <i className="fas fa-times"></i>}
         </StyledBurger>

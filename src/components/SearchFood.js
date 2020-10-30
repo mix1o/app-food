@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, {useState } from "react"
 import Loading from "./Loading";
 import SearchedFood from "./SearchedFood";
 import NameOfSearchedFood from "./NameOfSearchedFood"

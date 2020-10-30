@@ -14,7 +14,7 @@ const SearchedFood = ({image,recipeName,ingri,calories}) => {
         
             <div className="div-food">
                
-                <img className="food-img" src={image}/>
+                <img alt="foto" className="food-img" src={image}/>
                 <div className="food-header">
                 <p className="title-of-food">{recipeName}</p>
                 <p className="calories">Calories: {`${helpCalories}`}</p>
