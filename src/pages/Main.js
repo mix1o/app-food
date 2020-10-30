@@ -3,6 +3,7 @@ import Header from "../components/page/Header";
 import Hero from "../components/page/Hero";
 import AboutSection from "../components/page/AboutSection";
 import Footer from "../components/page/Footer";
+import Gallery from "../components/page/Gallery";
 
 const Main = () => {
     return (
@@ -10,6 +11,7 @@ const Main = () => {
            <Header/>
             <Hero/>
             <AboutSection/>
+            <Gallery/>
             <Footer/>
         </>
     )

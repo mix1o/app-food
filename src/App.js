@@ -9,6 +9,7 @@ import {
 import Main from "./pages/Main"
 import Search from "./pages/Search";
 import Tasks from "./pages/Tasks";
+import Article from "./pages/Article";
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Main}/>
         <Route exact path="/app-food" component={Main}/>
+        <Route exact path="/article" component={Article}/>
         <Route exact path="/search-recipe" component={Search}/>
         <Route exact path="/tasks" component={Tasks}/>
       </Switch>

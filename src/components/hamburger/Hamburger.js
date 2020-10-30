@@ -3,7 +3,8 @@ import styled from "styled-components"
 import ListHamburger from "./ListHamburger"
 
 const StyledBurger = styled.div`
-    background: #494D5f;
+    background: #333;
+    background: rgb(26, 24, 24);
     padding: 10px;
     display: flex;
     justify-content: space-between;

@@ -12,10 +12,9 @@ html,body {
     color: #fff;
 }
 .header {
-    background: #333;
-    height: auto;
+    background: rgb(26, 24, 24);
     position: sticky;
-    top:0;
+    top: 0;
     left:0;
     z-index: 3;
 }
@@ -37,7 +36,7 @@ html,body {
 .list-ham > li:first-of-type{
     margin-top:100px;
 }
-.fa-home,.fa-search,.fa-thumbtack,.fa-question-circle {
+.fa-home,.fa-search,.fa-thumbtack,.fa-question-circle,.fa-camera,.fa-file {
     margin-left: 15px;
     color:#a28089;
     font-size: 22px;
@@ -83,11 +82,14 @@ html,body {
 }
 .heading-3 {
     font-size: 26px;
+    text-align: center;
 }
 .about-box {
     background: rgb(248, 248, 248);
     margin-top: 40px;
-    padding: 15px 20px;
+    padding: 15px 25px;
+    width: 80%;
+    margin: 40px auto;
     box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.44);
 }
 .about-title {
@@ -131,3 +133,59 @@ Medium Purple: #d0bdf4
 Purple Pain: #8458B3
 
 Heavy Purple: #a28089 */
+
+.gallery {
+    border-top: 2px solid #a28089;
+    padding-top: 15px;
+}
+.foto {
+    width: 100%;
+}
+.gallery-foto {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 20px;
+}
+.fa-chevron-left{
+    position: absolute;
+    top:50%;
+    left: 15px;
+    z-index: 5;
+    transform: translate(-50%,-50%);
+}
+.fa-chevron-right {
+    position: absolute;
+    top:50%;
+    right: -15px;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+.fa-chevron-right,.fa-chevron-left {
+    padding: 10px;
+    background: #e5e5e5;
+}
+.article {
+    margin-top: 40px;
+    height: 80vh;
+}
+.article > h3 {
+    border-bottom: 2px solid #a28089;
+    padding-bottom: 10px;
+}
+.article-p {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 27px;
+}
+.article-p::first-letter {
+    font-weight: bold;
+    font-size: 24px;
+    color: #8458B3;
+}
+.article > .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
