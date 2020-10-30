@@ -157,13 +157,16 @@ Heavy Purple: #a28089 */
 .fa-chevron-right {
     position: absolute;
     top:50%;
-    right: -15px;
+    right: -20px;
     transform: translate(-50%,-50%);
     z-index: 5;
 }
 .fa-chevron-right,.fa-chevron-left {
     padding: 10px;
-    background: #e5e5e5;
+    background: #333;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 23px;
 }
 .article {
     margin-top: 40px;
@@ -175,7 +178,7 @@ Heavy Purple: #a28089 */
 }
 .article-p {
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 30px;
     text-align: justify;
     line-height: 27px;
 }
