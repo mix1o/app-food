@@ -50,11 +50,23 @@ html,body {
     color: #fff;
     position: relative;
 }
+@keyframes show{
+    0%{
+        opacity: .1;
+        transform:scale(1.4)
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .hero-box {
+    animation: show;
+    animation-duration: 1.2s;
+    animation-delay: .4s;
     text-align: center;
     padding: 10px;
     position: absolute;
-    top:40%;
+    top:45%;
     left:50%;
     transform: translate(-50%,-50%);
     width:100%;
@@ -66,6 +78,17 @@ html,body {
     font-size: 17px;
     margin-top: 15px;
 }
+@keyframes inf {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 .link-hero {
     display: inline-block;
     border-radius: 100px;
@@ -74,7 +97,12 @@ html,body {
     padding: 10px 20px;
     background: #a0d2eb;
     color: #000;
+    animation-name: inf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
+
 .about {
     padding: 20px;
     text-align: center;
@@ -88,7 +116,7 @@ html,body {
     background: rgb(248, 248, 248);
     margin-top: 40px;
     padding: 15px 25px;
-    width: 80%;
+    width: 88%;
     margin: 40px auto;
     box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.44);
 }
@@ -115,8 +143,9 @@ html,body {
     color: #a0d2eb;
 }
 .footer {
-    background: #494D5f;
+    background: #23242a;
     color: #fff;
+    background: #333;
     text-align: center;
     padding: 20px;
     margin-top: 60px;
@@ -352,7 +381,7 @@ Heavy Purple: #a28089 */
     backface-visibility: hidden;
     perspective: 1000px;
 }
-.box-review {
+.box-review,.comment {
     padding: 10px 20px;
     width: 80%;
     background: #f4f6fa;
@@ -362,7 +391,7 @@ Heavy Purple: #a28089 */
 .review {
     text-align: center;
 }
-.review > h3 {
+.single-review > h3,.review > h3 {
     margin-top: 30px;
 }
 .review-a {
@@ -394,4 +423,35 @@ Heavy Purple: #a28089 */
     justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
+}
+.comment {
+    width: 90%;
+}
+.title {
+    width: 90%;
+}
+.c-email {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #8458B3;
+    width: 10%;
+    display: block;
+}
+.c-body {
+    font-size: 15px;
+}
+.link-review {
+    text-decoration: none;
+    color: #fff;
+    background: #8458B3;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+}
+.fa-arrow-left {
+    margin-right: 10px;
+}
+.fa-arrow-right {
+    margin-left: 10px;
 }

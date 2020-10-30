@@ -5,6 +5,7 @@ import ListHamburger from "./ListHamburger"
 const StyledBurger = styled.div`
     background: #333;
     background: rgb(26, 24, 24);
+    background: #23242a;
     padding: 10px;
     display: flex;
     justify-content: space-between;

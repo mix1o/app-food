@@ -17,7 +17,7 @@ const User = ({userId}) => {
     return (
         <div className="user-header">
             {user.map(({name,id}) =>
-            <div className="user-h-2">
+            <div key={id} className="user-h-2">
                 <img alt="foto" className="foto-user" src={imgTab[id]}/>
                 <p className="name-user">{name}</p>
             </div>
