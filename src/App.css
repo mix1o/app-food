@@ -146,13 +146,26 @@ html,body {
     background: #23242a;
     color: #fff;
     background: #333;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
     margin-top: 60px;
 }
 .footer > p {
-    width: 100%;
+    width: 50%;
 }
+.socials {
+    padding: 3px;
+    width: 50%;
+    text-align: right;
+}
+.socials > i {
+    color: #d9d9d9;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
 /* Ice Cold: #a0d2eb
 
 Freeze Purple: #e5eaf5
@@ -250,7 +263,7 @@ Heavy Purple: #a28089 */
 .input-search {
     border-bottom-left-radius: 100px;
     border-top-left-radius: 100px;
-    width:75%;
+    width: 68%;
 }
 .input-search:focus,.btn-search:focus{
     outline: none;
@@ -453,5 +466,10 @@ Heavy Purple: #a28089 */
     margin-right: 10px;
 }
 .fa-arrow-right {
+    margin-left: 10px;
+}
+.btn-search > .fa-search {
+    color: #fff;
+    font-size: 12px;
     margin-left: 10px;
 }

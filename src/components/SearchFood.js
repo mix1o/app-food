@@ -34,7 +34,7 @@ const SearchFood = () => {
     return (
         <div className="box-search">
             <input value={value} onKeyDown={add} onChange={(e) => setValue(e.target.value)} placeholder="Enter name of dish to see recipes" className="input-search" type="text"></input>
-            <button onClick={() => searchF() } className="btn-search">Search</button>
+            <button onClick={() => searchF() } className="btn-search">Search<i class="fas fa-search"></i></button>
             <div className="content">
                 {!isSearched && <p className="results">Here will apear results</p>}
                 {!loading && food.hits.length <= 0 && <Error/>}
